@@ -1,5 +1,15 @@
 # 📋 Statement of Work (SOW) & Roadmap
 
+## 🎯 Core Feature Checklist
+- [ ] **Manual Drive Mobility:** Forward, reverse, left, and right directional control via micro-controller.
+- [ ] **Sonar Obstacle Avoidance:** HC-SR04 ultrasonic distance sensor combined with servo sweep to detect and halt near obstacles automatically.
+- [ ] **IoT Web Dashboard:** Asynchronous Wi-Fi web server (`ESPAsyncWebServer`) hosted on the ESP32 for remote browser-based control overrides.
+- [ ] **Indicator Light Mockup:** Standard LED with a current-limiting resistor wired to an ESP32 GPIO pin to simulate disinfection output states.
+- [ ] **ROS Serial Bridge:** Communication pipeline to transmit sensor telemetry and receive velocity twist commands from a workstation.
+- [ ] **2D LiDAR SLAM Mapping:** Integration of the [Slamtec RPLIDAR A1M8 2D LiDAR](https://www.amazon.com/dp/B08X3CDZRF?plpRedirect=mhFallback&ref=clp_cat_related_p_4&th=1) to stream raw point-cloud data and generate real-time indoor maps.
+
+---
+
 ## Phase 1: Locomotion & Validation (Completed - 15%)
 - [x] Assemble 3-motor rolling chassis base (transitioning to TT motor baseline for initial mobility).
 - [x] Flash ESP32 with initial LED blink test to verify GPIO integrity.
@@ -13,7 +23,7 @@
 - [ ] **Lab Day 2 (Integration & Testing):** Merge obstacle avoidance distance thresholds with motor-stop routines and run bug-fixing dry runs.
 
 ## Phase 3: IoT Connectivity & Web Dashboard (Target: Late October)
-- [ ] Reconnect and test ESP32 Wi-Fi asynchronous web server (`ESPAsyncWebServer`) for remote control overrides.
+- [ ] Reconnect and test ESP32 Wi-Fi asynchronous web server for remote control overrides.
 - [ ] Verify remote browser toggling for directional movement and indicator LED states over local network.
 
 ## Phase 4: ROS & Serial Communication Bridge (Target: November Week 1)
