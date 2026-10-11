@@ -1,14 +1,19 @@
 # 📋 Statement of Work (SOW) & Roadmap
 
 ## 🎯 Core Feature Checklist
-- [x] **Manual Drive Mobility:** Forward, reverse, left, and right directional control via direct micro-controller input.
-- [ ] **Manual LED Control:** On/board physical control of the indicator light via micro-controller GPIO.
+- [ ] **Manual Drive Mobility:** Forward, reverse, left, and right directional control via direct micro-controller input.
+- [ ] **Manual LED Control:** On-board physical control of the indicator light via micro-controller GPIO.
 - [ ] **Sonar Obstacle Avoidance:** HC-SR04 ultrasonic distance sensor combined with servo sweep to detect and halt near obstacles automatically.
 - [ ] **IoT Web Dashboard:** Asynchronous Wi-Fi web server (`ESPAsyncWebServer`) hosted on the ESP32 for remote browser-based control overrides (movement and indicator light).
 - [ ] **ROS Serial Bridge:** Communication pipeline to transmit sensor telemetry and receive velocity twist commands from a workstation.
 - [ ] **2D LiDAR SLAM Mapping:** Integration of the Slamtec RPLIDAR 2D LiDAR to stream raw point-cloud data and generate real-time indoor maps.
 
 ---
+
+## Phase 0: Parts Procurement, BOM & 3D Design (Completed)
+- [x] Finalize component selection (TT motors, ESP32, L298N/L9110S drivers, HC-SR04, servos, 18650 batteries).
+- [x] Compile budget tracking sheet and verify itemized vendor pricing and fund allocation.
+- [x] Complete CAD 3D modeling and structural component designs (Chero).
 
 ## Phase 1: Locomotion & Validation (Completed - 15%)
 - [x] Assemble 3-motor rolling chassis base (transitioning to TT motor baseline for initial mobility).
